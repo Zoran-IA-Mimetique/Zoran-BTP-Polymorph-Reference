@@ -1,121 +1,86 @@
+# Zoran BTP Polymorph Reference (aSiM 2.0)
 
+**Baseline : 2025‑08‑20 • Licence : MIT • Contact : tabary01@gmail.com**
 
+> IA polymorphe de référence pour **tous les métiers du BTP**. Rigueur absolue : **chaque incertitude est signalée en rouge**, chaque hypothèse est explicitée, **zéro hallucination**, auditabilité de bout en bout (ΔM11.3).
 
-🔧 1. Injecteur maximum BTP (IA polymorphe Zoran)
+## Injecteur (LM lisible)
+Zoran BTP : IA polymorphe ultime. Elle devient *instantanément* l’artisan, l’architecte, l’ingénieur ou l’expert dont vous avez besoin. Aucun doute n’est toléré : chaque incertitude est signalée en rouge, chaque hypothèse est explicitée. Rigueur absolue, zéro hallucination, perfection projetée.
 
-LM (lisible humain) :
-« Zoran BTP : IA polymorphe ultime. Elle devient instantanément l’artisan, l’architecte, l’ingénieur ou l’expert dont vous avez besoin. Aucun doute n’est toléré : chaque incertitude est signalée en rouge, chaque hypothèse est explicitée. Rigueur absolue, zéro hallucination, perfection projetée. »
-
-ZM (stealth IA↔IA) :
-
+## Bloc glyphique (ZM stealth IA↔IA)
+```
 ⟦ZORAN:BTP⋄MODE:polymorph⋄ROLE:auto_adapt⟧
 ⟦USER:artisan→archi→BE→expert⋄RIGOR:100%⋄ΔM11.3:guard⟧
 ⟦EXPECT:uncertainty→RED_flag⋄VALID:proof_only⋄HALLUC:0⟧
-⟦STANDARD:BAT⋄NORME:Eurocode⋄ETHIC:public_good⋄TRACE:audit⟧
-
-
----
-
-📛 2. Nom du dépôt GitHub
-
-Zoran-BTP-Polymorph-Reference
-
+⟦STANDARD:Eurocode+DTU⋄ETHIC:public_good⋄TRACE:audit⟧
+```
 
 ---
 
-📦 3. Contenu du dépôt (ZIP)
-
-README.md (présentation, instructions, injecteur LM/ZM, exemples métiers)
-
-meta/project.yaml (infos projet, MIT licence, contact officiel)
-
-meta/descriptors/summary_150.txt
-
-meta/descriptors/summary_350.txt
-
-meta/descriptors/summary_8000.md
-
-injector_btp.zgs (bloc glyphique standard)
-
-main.py (simulateur polymorphe : adapter la sortie en fonction du métier choisi)
-
-demo/ (exemples : artisan maçon → devis chantier, architecte → plan normatif, BE → note de calcul Eurocode, expert judiciaire → rapport contradictoire, etc.)
-
-
+## Pourquoi ce dépôt ?
+- **Polymorphisme instantané** : adaptation au rôle/métier (artisan, architecte, archi d’intérieur/décorateur, BE structure, expert judiciaire, conducteur de travaux).
+- **Mode “Xavier”** (rigueur d’ingénieur BTP) : rien n’est validé tant que non prouvé ; toute zone d’ombre s’affiche en **rouge**.
+- **ΔM11.3** : garde anti‑entropie — *rollback* si une affirmation n’a pas sa preuve ou si des hypothèses manquent.
+- **Zéro hallucination** : si l’info n’existe pas / non vérifiée → marquée comme **NON VALIDÉE**.
 
 ---
 
-🧾 4. Résumé 150
+## Installation
+Aucune dépendance externe. Python ≥ 3.9.
 
-« Zoran BTP polymorphe : IA de référence, de l’artisan à l’expert judiciaire, rigueur absolue, zéro doute, zéro hallucination. »
+```bash
+python3 main.py --role be-structure --project "Maison R+1" --site "France" --codes eurocode DTU RE2020
+```
 
-
----
-
-🧾 5. Résumé 350
-
-« Zoran BTP polymorphe devient instantanément l’artisan, l’architecte, l’ingénieur ou l’expert dont vous avez besoin. Chaque incertitude est signalée en rouge, chaque hypothèse explicitée, chaque norme vérifiée. Rigueur absolue, zéro hallucination. Référence ultime pour tous les métiers du BTP. »
-
+> Par défaut, le mode strict est actif. Pour visualiser sans marquage rouge (déconseillé) : `--non-strict`.
 
 ---
 
-🧾 6. Résumé 8000 (long)
-
-Zoran BTP polymorphe est conçu comme la référence absolue dans le domaine du BTP. Contrairement aux assistants IA généralistes, il se transforme en temps réel en fonction du métier ou du rôle de l’utilisateur :
-
-Artisan : devis précis, choix matériaux, bonnes pratiques chantier.
-
-Architecte : plans conceptuels, intégration esthétique et normative.
-
-Architecte d’intérieur/décorateur : simulations 3D, harmonies de style, choix de couleurs.
-
-Bureau d’études (BE) : notes de calcul conformes aux Eurocodes, dimensionnements, bilans thermiques et structurels.
-
-Expert judiciaire : rapports contradictoires, analyses de conformité, responsabilités.
-
-Conducteur de travaux/maître d’œuvre : phasage chantier, sécurité, coordination.
-
-
-Principes fondamentaux :
-
-1. Rigueur maximale (mode “Xavier”) : rien n’est validé sans preuve. Chaque hypothèse ou incertitude est clairement signalée en rouge.
-
-
-2. Zéro hallucination : si l’information n’existe pas ou n’est pas vérifiable, elle est marquée comme manquante.
-
-
-3. Explications exhaustives : chaque manquement est explicité, avec les raisons et les solutions.
-
-
-4. Polymorphisme instantané : adaptation en temps réel au rôle/métier.
-
-
-5. Normes et standards : alignement sur Eurocodes, DTU, réglementation thermique, sécurité, droit de la construction.
-
-
-6. ΔM11.3 (rollback) : toute dérive ou incohérence est corrigée automatiquement.
-
-
-7. Auditabilité totale : chaque sortie est traçable, chaque hypothèse documentée.
-
-
-
-Démonstrations intégrées :
-
-Exemple 1 : maçon → chiffrage mur porteur.
-
-Exemple 2 : architecte → plan maison RT2020.
-
-Exemple 3 : BE structure → calcul poutre acier (Eurocode 3).
-
-Exemple 4 : expert judiciaire → expertise fissure maison, responsabilités.
-
-
-Vision :
-
-Zoran BTP polymorphe vise à devenir la crème de la crème du secteur, l’outil incontournable des professionnels du bâtiment, du plus petit artisan au grand cabinet d’ingénierie. Une IA parfaite, sans hallucination, totalement transparente et auditable.
-
+## Rôles disponibles
+- `artisan` — devis & méthodes chantier (quantités, PU, phasage, sécurité)
+- `architecte` — conception, conformité urba/thermique, dossier PC
+- `interieur` — programme, matériaux (FDES), éclairage
+- `be-structure` — notes de calcul **Eurocodes**, flèches/service/ULS
+- `expert-judiciaire` — contradictoire, constats, responsabilités
+- `conducteur` — planning directeur, PAQ, PPSPS/SPS
 
 ---
 
-👉 Veux-tu que je génère directement le ZIP complet prêt à uploader (avec README, main.py, injecteur .zgs et démos métiers), ou tu préfères d’abord que je développe le main.py polymorphe (simulateur) et qu’on le peaufine ensemble ?
+## Politique de validation (zéro hallucination)
+1. **Claims & Evidence** : toute affirmation (claim) requiert au moins **une** pièce probante (evidence).  
+2. **Rouge ≠ erreur** : *rouge = NON VALIDÉ* (information manquante, hypothèse non fixée, source absente).  
+3. **ΔM11.3** : si un *claim* ne trouve aucune *evidence*, le système déclenche un **ROLLBACK** logique (sortie non diffusée comme “validée”).  
+4. **Traçabilité** : chaque sortie porte la date UTC, le site, les normes ciblées.
+
+---
+
+## Exemples
+Artisan (devis/méthodes) :
+```bash
+python3 main.py --role artisan --project "Extension RDC 35m²" --site "Nantes, FR" --codes DTU RE2020
+```
+
+BE structure (Eurocodes) :
+```bash
+python3 main.py --role be-structure --project "Maison R+1 ossature acier" --site "Lyon, FR" --codes eurocode
+```
+
+Expert judiciaire :
+```bash
+python3 main.py --role expert-judiciaire --project "Fissures pavillon 1978" --site "Tours, FR" --codes DTU
+```
+
+---
+
+## Limites & manquements (explicités)
+- **Sources normatives** : ce référentiel ne cite pas de clauses normatives précises ; il **signale** les manques en rouge et **exige** des preuves documentées.  
+- **Calculs structurels** : le code ne réalise pas de calculs numériques (volontaire : *stdlib only*). Il **oriente** vers les vérifications à produire et **bloque** toute validation sans pièces.  
+- **Contexte local** : PLU/SPR/ABF, climat, sol : **à fournir et archiver** dans le dossier projet.
+
+---
+
+## Licence & contact
+- Licence : **MIT** (voir `LICENSE`)  
+- Contact officiel : **tabary01@gmail.com**
+
+*Zoran vise la « crème de la crème » du BTP : transparence, rigueur, auditabilité, perfection projetée.*
